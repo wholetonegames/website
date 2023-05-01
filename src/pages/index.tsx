@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Let&apos;s check our <Link href="/dogs/">doggos</Link>.
+          Let&apos;s check our <Link href="dogs/">doggos</Link>.
         </p>
 
         
