@@ -5,7 +5,7 @@ const nextConfig = {
   assetPrefix: isProd ? '/website/' : '',
   basePath: isProd ? '/website' : '',
   distDir: 'docs',
-  images:{
+  images: {
     unoptimized: true,
   },
   reactStrictMode: true,

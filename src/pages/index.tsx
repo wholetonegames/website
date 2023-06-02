@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/wholetonelogo.png" alt="Wholetone Games Logo" width={338} height={112} />
+        <Image src="wholetonelogo.png" alt="Wholetone Games Logo" width={338} height={112} />
         {/* <p className={styles.description}>
           Let&apos;s check our <Link href="dogs/">doggos</Link>.
         </p> */}
