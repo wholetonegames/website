@@ -23,6 +23,7 @@ const Home: NextPage = () => {
         {games.map((game) => (
           <div key={game.title} className='steam-widget'>
             {/* <Link href={`/dogs/${dog.id}`}>{dog.name}</Link> */}
+            <p>{game.title}</p>
             {game.steamId && <SteamWidget steamId={game.steamId} />}
           </div>
         ))}
