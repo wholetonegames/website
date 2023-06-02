@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Wholetone Games</title>
         <meta name="description" content="Wholetone Games official website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
       </Head>
 
       <main className={styles.main}>
