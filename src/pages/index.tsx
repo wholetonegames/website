@@ -26,6 +26,10 @@ const Home: NextPage = () => {
             {game.steamId && <SteamWidget steamId={game.steamId} />}
           </div>
         ))}
+
+        <p className={styles.description}>
+          <Link href="https://wholetonegames.blogspot.com">Old Blogger website</Link>
+        </p>
       </main>
 
       <footer className={styles.footer}>
