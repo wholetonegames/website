@@ -1,3 +1,11 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    color: black;
+}
+
 iframe {
     width: 100%;
     height: 190px;
@@ -5,7 +13,56 @@ iframe {
 }
 
 .steam-widget {
-    width: 50%;
+    width: 338px;
+    margin: auto;
+}
+
+.game-title {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.red-square {
+    background-color: #FF0000;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2px;
+}
+
+.blue-square {
+    background-color: #0000FF;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2px;
+}
+
+.green-square {
+    background-color: #00FF00;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2px;
+}
+
+.yellow-square {
+    background-color: #fbff00;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 2px;
+}
+
+.colour-squares {
+    height: 2rem;
+    display: flex;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+}
+
+p {
+    margin: 0;
 }
 
 @media only screen and (max-width: 600px) {

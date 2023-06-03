@@ -1,4 +1,3 @@
-import '../styles/globals.css'
 import '../styles/wtg.css'
 import type { AppProps } from 'next/app'
 
