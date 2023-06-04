@@ -1,6 +1,6 @@
 export type WTGAppType = 'game' | 'app' | 'dlc'
 
-export interface WTGame {
+export interface GameWTG {
     type: WTGAppType
     title: string
     steamId?: number

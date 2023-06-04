@@ -1,12 +1,5 @@
+import { slugify } from '@/utils/slugify'
 import Link from 'next/link'
-
-const slugify = (str: string) =>
-    str
-        .toLowerCase()
-        .trim()
-        .replace(/[^\w\s-]/g, '')
-        .replace(/[\s_-]+/g, '-')
-        .replace(/^-+|-+$/g, '');
 
 export const GameTitle: React.FC<{ gameTitle: string }> = ({ gameTitle }) => {
     return <div className='game-title'>

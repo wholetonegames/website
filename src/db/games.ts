@@ -1,6 +1,6 @@
-import { WTGame } from "@/definitions/games";
+import { GameWTG } from "@/definitions/games";
 
-export const games: WTGame[] = [
+export const games: GameWTG[] = [
     {
         title: 'TeleNovela',
         steamId: 1687050,

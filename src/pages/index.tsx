@@ -1,27 +1,23 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { GetStaticProps, NextPage } from 'next'
 import Link from 'next/link'
-import { games } from '@/db/games'
+import Image from 'next/image'
 import { SteamWidget } from '@/components/steam_widget'
 import { GameTitle } from '@/components/game_title'
+import { FooterWTG } from '@/components/footer'
+import { HeadWTG } from '@/components/head'
+import { games as gamesDB } from "../db/games";
+import { GameWTG } from '@/definitions/games'
 
-const Home: NextPage = () => {
+const Home: NextPage<{ games: GameWTG[] }> = ({ games }) => {
   return (
     <div>
-      <Head>
-        <title>Wholetone Games</title>
-        <meta name="description" content="Wholetone Games official website" />
-        <link rel="icon" href="favicon.ico" />
-      </Head>
+      <HeadWTG title='Wholetone Games' />
 
       <main className='main'>
         <div className='steam-widget'>
-          <Image src="wholetonelogo.png" alt="Wholetone Games Logo" width={338} height={112} />
+          <Image src="wholetonelogo.png" alt="Wholetone Games Logo" width={338} height={112} priority />
         </div>
-        {/* <p className={styles.description}>
-          Let&apos;s check our <Link href="dogs/">doggos</Link>.
-        </p> */}
+
         {games.map((game) => (
           <div key={game.title} className='steam-widget'>
             <GameTitle gameTitle={game.title} />
@@ -34,11 +30,19 @@ const Home: NextPage = () => {
         </p>
       </main>
 
-      <footer>
-        Wholetone Games © 2013-2023
-      </footer>
+      <FooterWTG />
     </div>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const games = gamesDB;
+
+  return {
+    props: {
+      games,
+    },
+  };
+};
 
 export default Home
