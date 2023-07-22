@@ -11,7 +11,13 @@
 
 <style>
     * {
-        margin: 0;
+        margin: 1rem;
+        font-family: 'Courier New', monospace;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
     }
 
     iframe {
@@ -20,15 +26,31 @@
         border: 0;
     }
 
+    #header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     @media only screen and (max-width: 600px) {
         iframe {
             width: 100%;
         }
+
+        #header {
+            width: 100%;
+            flex-direction: column;
+        }
     }
 </style>
 
-<img alt="Wholetone Games Logo" width="338" height="112" style="color:transparent" src="wholetonelogo.png" />
-<div></div>
+<div id="header">
+    <img alt="Wholetone Games Logo" width="338" height="112" style="color:transparent" src="wholetonelogo.png" />
+    <a href="https://www.indiedb.com/company/wholetone-games" title="View Wholetone Games on Indie DB">
+        <img src="https://button.indiedb.com/popularity/medium/groups/30500.png" alt="Wholetone Games" />
+    </a>
+</div>
 
 <iframe src="https://store.steampowered.com/widget/2511620/"></iframe>
 <iframe src="https://store.steampowered.com/widget/1687050/"></iframe>
@@ -58,11 +80,9 @@
 <iframe src="https://store.steampowered.com/widget/451730/"></iframe>
 <br />
 
-<!-- 
 <iframe src="https://widgets.gamejolt.com/package/v1?key=vnVMJHUV"></iframe>
-<iframe src="https://itch.io/embed/712183"><a href="https://wholetonegames.itch.io/free-rhythm-game"
-    >Free Rhythm Game by wholetonegames</a
-  ></iframe>
+<iframe src="https://itch.io/embed/712183"><a href="https://wholetonegames.itch.io/free-rhythm-game">Free Rhythm Game by
+        wholetonegames</a></iframe>
 <br />
 <h3>Get more of my free games at:</h3>
 <a href="https://download.cnet.com/developer/wholetone-games/i-10337660" target="_blank">download.cnet.com</a><br />
@@ -72,9 +92,10 @@
 <a href="https://www.youtube.com/watch?v=xH3oy8lHBSE" target="_blank">10 Weirdest Christian Games</a><br />
 <a href="https://www.youtube.com/watch?v=Q9EspvjWcRs" target="_blank">The Unholy World of Jesus Games</a><br />
 <a href="https://www.youtube.com/watch?v=BCo8AGgRFdQ" target="_blank">JESUS CHRIST RPG - Smelly Fingers</a><br />
-<a href="https://www.youtube.com/watch?v=pZyrpPtR4-s" target="_blank">ROCK PAPER SCISSORS CHAMPION - Well... It Has A Theme Song</a><br />
+<a href="https://www.youtube.com/watch?v=pZyrpPtR4-s" target="_blank">ROCK PAPER SCISSORS CHAMPION - Well... It Has A
+    Theme Song</a><br />
 <h3>TV Tropes page</h3>
-<a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/JesusChristRPGTrilogy" target="_blank">Video Game / Jesus Christ RPG Trilogy</a><br />
--->
+<a href="https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/JesusChristRPGTrilogy" target="_blank">Video Game / Jesus
+    Christ RPG Trilogy</a><br />
 
 </html>
